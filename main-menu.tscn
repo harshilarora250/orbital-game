@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://cueod3gsxngil"]
 
 [ext_resource type="AudioStream" uid="uid://ss6vmv18ixvs" path="res://assets/Main Menu Song.wav" id="1_gvk52"]
+[ext_resource type="Script" uid="uid://bcpytbk4ncoqu" path="res://play_button_script.gd" id="1_j3jwc"]
 
 [node name="Control" type="Control" unique_id=1194595929]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_j3jwc")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1482449608]
 stream = ExtResource("1_gvk52")
@@ -27,3 +29,5 @@ offset_right = 838.0
 offset_bottom = 479.0
 theme_override_font_sizes/font_size = 100
 text = "Play Game"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
