@@ -1,34 +1,20 @@
 [gd_scene format=3 uid="uid://cueod3gsxngil"]
 
-[ext_resource type="Script" uid="uid://ojm5pmqxdmpd" path="res://main_menu.gd" id="1_gvk52"]
+[ext_resource type="AudioStream" uid="uid://ss6vmv18ixvs" path="res://assets/Main Menu Song.wav" id="1_gvk52"]
 
 [node name="Control" type="Control" unique_id=1194595929]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_gvk52")
+anchors_preset = 0
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=631035019]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1482449608]
+stream = ExtResource("1_gvk52")
+autoplay = true
 
-[node name="Label" type="Label" parent="." unique_id=1061038974]
+[node name="Label" type="Label" parent="." unique_id=33075987]
 layout_mode = 0
-offset_left = 407.0
-offset_top = 75.0
-offset_right = 744.0
-offset_bottom = 212.0
-theme_override_font_sizes/font_size = 100
+offset_left = 232.0
+offset_top = 90.0
+offset_right = 853.0
+offset_bottom = 256.0
+theme_override_font_sizes/font_size = 108
 text = "Orbital"
-
-[node name="Button" type="Button" parent="." unique_id=1887067933]
-layout_mode = 0
-offset_left = 358.0
-offset_top = 301.0
-offset_right = 796.0
-offset_bottom = 444.0
-theme_override_font_sizes/font_size = 80
-text = "Play Game"
-
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
