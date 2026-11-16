@@ -18,3 +18,12 @@ offset_right = 813.0
 offset_bottom = 292.0
 theme_override_font_sizes/font_size = 147
 text = "Orbital"
+
+[node name="Button" type="Button" parent="." unique_id=1112114130]
+layout_mode = 0
+offset_left = 307.0
+offset_top = 334.0
+offset_right = 838.0
+offset_bottom = 479.0
+theme_override_font_sizes/font_size = 100
+text = "Play Game"
