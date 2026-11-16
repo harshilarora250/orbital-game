@@ -12,9 +12,9 @@ autoplay = true
 
 [node name="Label" type="Label" parent="." unique_id=33075987]
 layout_mode = 0
-offset_left = 232.0
+offset_left = 317.0
 offset_top = 90.0
-offset_right = 853.0
-offset_bottom = 256.0
-theme_override_font_sizes/font_size = 108
+offset_right = 813.0
+offset_bottom = 292.0
+theme_override_font_sizes/font_size = 147
 text = "Orbital"
