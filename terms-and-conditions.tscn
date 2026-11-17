@@ -7,3 +7,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=1111316390]
+layout_mode = 0
+offset_top = 194.0
+offset_right = 1149.0
+offset_bottom = 360.0
+
+[node name="Button" type="Button" parent="." unique_id=841474956]
+layout_mode = 0
+offset_top = 528.0
+offset_right = 1152.0
+offset_bottom = 645.0
+text = "By Clicking this button, I accept. And want to cotinu."
