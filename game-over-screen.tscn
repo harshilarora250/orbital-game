@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://dtdrlpstdfc06"]
 
+[ext_resource type="Script" uid="uid://d0i71kkewwja8" path="res://game_over_screen-script.gd" id="1_gvqcw"]
+
 [node name="Control" type="Control" unique_id=279411272]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_gvqcw")
 
 [node name="Label" type="Label" parent="." unique_id=412204392]
 layout_mode = 0
@@ -26,7 +29,7 @@ offset_bottom = 289.0
 theme_override_font_sizes/font_size = 75
 text = "Good try, now go again"
 
-[node name="Button" type="Button" parent="." unique_id=1447995069]
+[node name="legend" type="Button" parent="." unique_id=1447995069]
 layout_mode = 0
 offset_left = 314.0
 offset_top = 294.0
@@ -36,7 +39,7 @@ theme_override_font_sizes/font_size = 65
 text = "Try Again,
 You're a legend"
 
-[node name="Button2" type="Button" parent="." unique_id=570281129]
+[node name="disappointed" type="Button" parent="." unique_id=570281129]
 layout_mode = 0
 offset_left = 490.0
 offset_top = 512.0
@@ -44,3 +47,6 @@ offset_right = 644.0
 offset_bottom = 595.0
 text = "Quit, 
 I'm disappointed"
+
+[connection signal="pressed" from="legend" to="." method="_on_legend_pressed"]
+[connection signal="pressed" from="disappointed" to="." method="_on_disappointed_pressed"]
