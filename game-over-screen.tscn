@@ -7,3 +7,40 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=412204392]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 90.0
+offset_right = 840.0
+offset_bottom = 227.0
+theme_override_font_sizes/font_size = 100
+text = "Game Over"
+
+[node name="Label2" type="Label" parent="." unique_id=1398388992]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 186.0
+offset_right = 994.0
+offset_bottom = 289.0
+theme_override_font_sizes/font_size = 75
+text = "Good try, now go again"
+
+[node name="Button" type="Button" parent="." unique_id=1447995069]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 294.0
+offset_right = 842.0
+offset_bottom = 494.0
+theme_override_font_sizes/font_size = 65
+text = "Try Again,
+You're a legend"
+
+[node name="Button2" type="Button" parent="." unique_id=570281129]
+layout_mode = 0
+offset_left = 490.0
+offset_top = 512.0
+offset_right = 644.0
+offset_bottom = 595.0
+text = "Quit, 
+I'm disappointed"
